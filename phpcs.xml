@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<ruleset name="NUSA-WP">
+	<description>NUSA-WP Standards</description>
+
+	<!-- Include the base WordPress ruleset -->
+	<rule ref="WordPress"/>
+
+	<!-- By default is set as warning, this should be an error -->
+	<rule ref="Generic.PHP.DisallowShortOpenTag">
+		<type>error</type>
+	</rule>
+
+	<!-- Disabling a few rules that are a bit too much or make things more difficult to read -->
+	<rule ref="Generic.Arrays.DisallowShortArraySyntax.Found">
+		<severity>0</severity>
+	</rule>
+	<rule ref="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket">
+		<severity>0</severity>
+	</rule>
+	<rule ref="PEAR.Functions.FunctionCallSignature.MultipleArguments">
+		<severity>0</severity>
+	</rule>
+	<rule ref="PEAR.Functions.FunctionCallSignature.CloseBracketLine">
+		<severity>0</severity>
+	</rule>
+	<rule ref="Squiz.Commenting.FileComment.MissingPackageTag">
+		<severity>0</severity>
+	</rule>
+	<rule ref="Squiz.PHP.EmbeddedPhp.ContentBeforeOpen">
+		<severity>0</severity>
+	</rule>
+	<rule ref="Squiz.PHP.EmbeddedPhp.ContentAfterEnd">
+		<severity>0</severity>
+	</rule>
+	<rule ref="Squiz.PHP.EmbeddedPhp.ContentAfterEnd">
+		<severity>0</severity>
+	</rule>
+</ruleset>
