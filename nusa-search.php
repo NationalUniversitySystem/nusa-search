@@ -1,10 +1,9 @@
 <?php
 /**
  * Plugin Name:     NUSA Search
- * Plugin URI:      PLUGIN SITE HERE
+ * Plugin URI:      https://github.com/NationalUniversitySystem/nusa-search
  * Description:     Custom plugin to customize a WP site's internal search functionality.
  * Author:          Mike Estrada
- * Author URI:      YOUR SITE HERE
  * Text Domain:     nusa-search
  * Version:         0.1.0
  *
@@ -26,6 +25,6 @@ use NUSA_Search\Core\Init;
 add_action( 'plugins_loaded', function() {
 	require_once NUSA_SEARCH_PATH . 'core/autoload.php';
 
-	// Initializing file is in includes/class-init.php. Refer to file for setup.
+	// Initializing file is in core/class-init.php. Refer to file for setup.
 	Init::singleton();
 } );
